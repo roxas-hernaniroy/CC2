@@ -1,4 +1,4 @@
-public class Test {
+public class Test { //public class [filename]
     public static void main(String[] args) {
         
         //single line comment
