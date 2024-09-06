@@ -1,2 +1,2 @@
 # Java projects
-testing Java code
+learning Java code
