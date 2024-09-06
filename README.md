@@ -1,2 +1,2 @@
-# Java projects
+# Java
 learning Java code
