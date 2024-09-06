@@ -1,11 +1,12 @@
 public class Test {
     public static void main(String[] args) {
-        //print
+        //single line comment
         /*
-        September 6, 2024
-        First Programming Session
+        multi
+        line
+        comment
         */
-        System.out.println ("Anna \t\tRhodora \nQuitaleg ");
+        System.out.println ("Anna \t\tRhodora \nQuitaleg "); //println adds a line break after the line; \t adds tabspace before the text; \n adds a new line before the text
         System.out.print ("\n\n\nAnna\"s Class ");
         System.out.println ("I love Java programming ");
     }    
