@@ -17,7 +17,8 @@ public class Test {
         // \n adds a new line before the text
         // \ followed by the symbol that would otherwise break code prevents it from doing so
         
-        System.out.print ("I love Java programming ");
+        System.out.print ("Sator Arepo Tenet ");
+        System.out.print ("Opera Rotas ");
         //print does not add a line break after the code line
     }    
 }
