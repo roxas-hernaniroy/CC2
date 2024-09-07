@@ -31,8 +31,8 @@ public class test { //public class [filename]
             System.out.println("BOMBOOOOOCLAT");
 
         //boolean RNG two variables
-        int X = (int)(Math.random() * 11);
-        int Y = (int)(Math.random() * 11);
-        System.out.println(X > Y);
+        int Z = (int)(Math.random() * 11);
+        int A = (int)(Math.random() * 11);
+        System.out.println(Z > A);
         }
 }
