@@ -8,7 +8,7 @@ public class Test { //public class [filename]
         comment
         */
         
-        //never forget the semicolon
+        //never forget the semicolon ;
         //text should always be between "", add a space after text string for readability
         
         System.out.println ("Sator \tArepo \nTenet \@Opera");
