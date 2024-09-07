@@ -1,4 +1,4 @@
-public class Test { //public class [filename]
+public class test { //public class [filename]
     public static void main(String[] args) {
         
         //single line comment
@@ -15,10 +15,19 @@ public class Test { //public class [filename]
         // println adds a line break after the code line
         // \t adds tabspace before the text
         // \n adds a new line before the text
-        // \ followed by the symbol that would otherwise confuse code prevents it from doing so
+        // \ followed by the symbol that would otherwise break code prevents it from doing so
         
         System.out.print ("Sator Arepo Tenet ");
-        System.out.print ("Opera Rotas ");
+        System.out.println ("Opera Rotas ");
         //print does not add a line break after the code line
+        
+        //1000 digit random number dependent if else print
+        int X = (int)(Math.random() * 1001);
+        int Y = (int)(Math.random() * 1001);
+        if (X > Y){
+            System.out.println("AWOOOOOOOOOGA");
+        }
+        else
+            System.out.println("BOMBOOOOOCLAT");
     }    
 }
