@@ -29,5 +29,10 @@ public class test { //public class [filename]
         }
         else
             System.out.println("BOMBOOOOOCLAT");
-    }    
+
+        //boolean RNG two variables
+        int X = (int)(Math.random() * 11);
+        int Y = (int)(Math.random() * 11);
+        System.out.println(X > Y);
+        }
 }
