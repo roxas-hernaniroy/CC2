@@ -13,6 +13,6 @@ public class cc2challenge2roxashrb {
         System.out.print("The length of the garden is " + L + ". ");
         System.out.println("The width of the garden is " + W + ".");
         System.out.println("The area of the garden is " + A + ".");
-        System.out.println("The perimeter of the garden is " + P ".");
+        System.out.println("The perimeter of the garden is " + P + ".");
     }
 }
