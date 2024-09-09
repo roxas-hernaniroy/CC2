@@ -11,7 +11,7 @@ public class cc2challenge2roxashrb {
             the length of the garden is 42 meters
             the width of the garden is 12 meters
         */
-        //set variables and print area
+        //set variables
         int L = 42, W = 12;
         int A = L * W;
         int P = 2 * (L + W);
