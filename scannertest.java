@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.regex;
 
 public class scannertest {
 	public static void main(String[] args) {
