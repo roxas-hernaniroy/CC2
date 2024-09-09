@@ -1,3 +1,10 @@
+/*
+Roxas, Hernani Roy B.
+CC2 CITCS 1B-B
+2024-09-09
+Laboratory Challenge 2: Calculating The Area and Perimeter of a Rectangle
+*/
+
 public class cc2challenge2roxashrb {
     public static void main(String[] args) {
         /* for example, we have a garden with these values:
