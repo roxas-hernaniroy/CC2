@@ -9,13 +9,15 @@ public class scannertest {
 		int number = input.nextInt();
 		double floatnumber = input.nextDouble();
 		
-		//System.out.println("text: " + text);
-		//System.out.println("number: " + number);
+		System.out.println("text: " + text);
+		System.out.println("number: " + number);
 		System.out.println("floating point number : " + floatnumber);
 		
 		/*not sure about this code block here
-		if nextLine() = "STOP";
-		close();
+		String closecommand = input.findInLine("STOP");
+		if (closecommand == true) {
+			input.close();
+		}
 		*/
 	}
 }
