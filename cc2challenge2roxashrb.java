@@ -17,9 +17,9 @@ public class cc2challenge2roxashrb {
         int P = 2 * (L + W);
         
         //print results
-        System.out.print("The length of the garden is " + L + "meters, ");
-        System.out.println("and its width is " + W + "meters.");
-        System.out.print("The area of the garden is " + A + "meters, ");
-        System.out.println("and its perimeter is " + P + "meters.");
+        System.out.print("The length of the garden is " + L + " meters, ");
+        System.out.println("and its width is " + W + " meters.");
+        System.out.print("The area of the garden is " + A + " meters, ");
+        System.out.println("and its perimeter is " + P + " meters.");
     }
 }
