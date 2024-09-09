@@ -16,7 +16,7 @@ public class scannertest {
 		
 		/*not sure about this code block here
 		String closecommand = input.findInLine("STOP");
-		if (closecommand == true) {
+		if (closecommand.equals(true)) {
 			input.close();
 		}
 		*/
