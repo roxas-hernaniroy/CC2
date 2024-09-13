@@ -22,17 +22,17 @@ public class test { //public class [filename]
         //print does not add a line break after the code line
         
         //1000 digit random number dependent if else print
-        int X = (int)(Math.random() * 1001);
-        int Y = (int)(Math.random() * 1001);
-        if (X > Y){
+        int variableX = (int)(Math.random() * 1001);
+        int variableY = (int)(Math.random() * 1001);
+        if (variableX > variableY){
             System.out.println("AWOOOOOOOOOGA");
         }
         else
             System.out.println("BOMBOOOOOCLAT");
 
         //boolean RNG two variables
-        int Z = (int)(Math.random() * 11);
-        int A = (int)(Math.random() * 11);
-        System.out.println(Z > A);
+        int variableZ = (int)(Math.random() * 11);
+        int variableA = (int)(Math.random() * 11);
+        System.out.println(variableZ > variableA);
         }
 }
