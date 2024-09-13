@@ -15,7 +15,7 @@ public class test { //public class [filename]
         // println adds a line break after the code line
         // \t adds tabspace before the text
         // \n adds a new line before the text
-        // \ followed by the symbol that would otherwise break code prevents it from doing so
+        // \ followed by the symbol that would confuse code prevents it from doing so
         
         System.out.print ("Sator Arepo Tenet ");
         System.out.println ("Opera Rotas ");
