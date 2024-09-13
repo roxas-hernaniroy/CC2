@@ -10,6 +10,7 @@ public class test { //public class [filename]
         
         //never forget the semicolon ;
         //text should always be between "", add a space after text string for readability
+        //for strings, names and integers, it is not required
         
         System.out.println ("Sator \tArepo \nTenet \"Opera\" ");
         // println adds a line break after the code line
