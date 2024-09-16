@@ -1,17 +1,20 @@
+//Roxas, Hernani Roy B.
+//CITCS 1B-B
 import java.util.Scanner;
+public class InputScanner {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter age:");
+        
+        //String inputText = sc.nextLine();
+        //System.out.println("Inputted text is: " + inputText);
+        
+        int inputInteger = sc.nextInt();
+        System.out.println("Inputted age is: " + inputInteger);
+    }
+    
+}
 
-public class scannertest {
-	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		System.out.println("Enter input:");
-		
-		String text = input.nextLine();
-		int number = input.nextInt();
-		double floatnumber = input.nextDouble();
-		
-		System.out.println("text: " + text);
-		System.out.println("number: " + number);
-		System.out.println("floating point number : " + floatnumber);
 		
 		/*not sure about this code block here
 		String closecommand = input.findInLine("STOP");
@@ -19,5 +22,3 @@ public class scannertest {
 			input.close();
 		}
 		*/
-	}
-}
