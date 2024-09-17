@@ -33,3 +33,42 @@ public class RadixConv {
         }
     }
 }
+
+/*
+import java.util.Scanner;
+public class RadixConv{
+    public static void main(String[] args) {
+        boolean continueProgram = true;
+        Scanner userInput = new Scanner(System.in);
+        String stopProgram = "STOP";
+        
+        while (continueProgram) {
+            System.out.println("base10 to base2/base8/base16\nEnter input:");
+            long numberInput = userInput.nextLong();
+            String textInput = userInput.nextLine();
+            
+            System.out.println("Enter destination radix:");
+            byte radixInput = userInput.nextByte();
+            
+            switch (radixInput) {
+                case 2:
+                    String binaryResult = long.toString(numberInput, 2);
+                    System.out.println(numberInput + "to binary: " + binaryResult);
+                    break;
+                case 8:
+                    String octalResult = long.toString(numberInput, 8);
+                    System.out.println(numberInput + "to octal: " + octalResult);
+                    break;
+                case 16:
+                    String hexResult = long.toString(numberInput, 16);
+                    System.out.println(numberInput + "to hexadecimal: " + hexResult);
+                    break;
+                default:
+                    System.out.println("Unsupported for now.")
+                    byte radixInput = userInput.nextByte();
+                    break;
+            }
+        }
+    }
+}
+*/
