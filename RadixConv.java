@@ -68,8 +68,10 @@ public class RadixConv{
                     System.out.println(numberInput + "to hexadecimal: " + hexResult);
                     break;
                 default:
-                    System.out.println("Unsupported for now.");
-                    byte radixInput = userInput.nextByte();
+                    System.out.println("Unsupported for now. Reset? Y/N");
+                    if (userInput.nextLine("N") {
+                    userInput.close();
+                    }
                     break;
             }
         }
