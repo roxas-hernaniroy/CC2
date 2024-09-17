@@ -47,7 +47,7 @@ public class RadixConv{
             long numberInput = userInput.nextLong();
             String textInput = userInput.nextLine();
 
-            if (boolean stopCommand = true) {
+            if (boolean stopProgram = true) {
                 boolean continueProgram = false;
             }
             
