@@ -7,11 +7,6 @@ public class RadixConv {
         System.out.println("Enter input:");
         long numberInput = userInput.nextLong();
         String textInput = userInput.nextLine();
-/*
-        if (textInput.equals("STOP")) {
-            userInput.close();
-        }
-*/
         
         System.out.println("Enter desired base:");
         byte radix;
@@ -29,6 +24,9 @@ public class RadixConv {
             case 2:
                 String decimalToBinary = Long.toString(numberInput, 2);
                 System.out.println("Binary Result: " + decimalToBinary);
+                break;
+            default:
+                System.out.println("Work in progress, choose between 2/8/16");
                 break;
         }
     }
