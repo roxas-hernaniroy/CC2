@@ -56,15 +56,15 @@ public class RadixConv{
             
             switch (radixInput) {
                 case 2:
-                    String binaryResult = long.toString(numberInput, 2);
+                    String binaryResult = Long.toString(numberInput, 2);
                     System.out.println(numberInput + "to binary: " + binaryResult);
                     break;
                 case 8:
-                    String octalResult = long.toString(numberInput, 8);
+                    String octalResult = Long.toString(numberInput, 8);
                     System.out.println(numberInput + "to octal: " + octalResult);
                     break;
                 case 16:
-                    String hexResult = long.toString(numberInput, 16);
+                    String hexResult = Long.toString(numberInput, 16);
                     System.out.println(numberInput + "to hexadecimal: " + hexResult);
                     break;
                 default:
