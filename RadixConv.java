@@ -46,6 +46,10 @@ public class RadixConv{
             System.out.println("base10 to base2/base8/base16\nEnter input:");
             long numberInput = userInput.nextLong();
             String textInput = userInput.nextLine();
+
+            if (boolean stopCommand = true) {
+                boolean continueProgram = false;
+            }
             
             System.out.println("Enter destination radix:");
             byte radixInput = userInput.nextByte();
