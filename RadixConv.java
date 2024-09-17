@@ -3,10 +3,15 @@ public class RadixConv {
     public static void main(String[] args) {
         
         Scanner userInput = new Scanner(System.in);
-        System.out.println("Current radix value: " + userInput.radix());
         
         System.out.println("Enter input:");
         long numberInput = userInput.nextLong();
+        String textInput = userInput.nextLine();
+/*
+        if (textInput.equals("STOP")) {
+            userInput.close();
+        }
+*/
         
         System.out.println("Enter desired base:");
         int radix;
