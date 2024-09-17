@@ -14,7 +14,7 @@ public class RadixConv {
 */
         
         System.out.println("Enter desired base:");
-        int radix;
+        byte radix;
         radix = userInput.nextByte();
         
         switch (radix) {
