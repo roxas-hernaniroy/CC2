@@ -3,7 +3,9 @@ public class RadixConv {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         boolean continueProgram = true;
+        //int programState = 1;
         
+        //while (programState < 2) {
         while (continueProgram) {
             System.out.println("Enter input:");
             
@@ -13,6 +15,7 @@ public class RadixConv {
             
             if (textInput.equals("STOP")) {
                 System.out.println("Closing...");
+                //programState++;
                 userInput.close();
                 System.exit(0);
             }
@@ -38,7 +41,8 @@ public class RadixConv {
                 default:
                     System.out.println("Work in progress, choose between 2/8/16");
             }
-        }     
+        }
+        //
     }
 }
 
