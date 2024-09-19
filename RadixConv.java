@@ -42,7 +42,8 @@ public class RadixConv {
                     System.out.println("Work in progress, choose between 2/8/16");
             }
         }
-        //
+        //System.out.println("Closing...");
+        //System.exit(0);
     }
 }
 
