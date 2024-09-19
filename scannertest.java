@@ -22,3 +22,41 @@ public class InputScanner {
 			input.close();
 		}
 		*/
+import java.util.Scanner;
+public class BasicCalculator {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        boolean continueProgram = true;
+        
+        while (continueProgram) {
+            System.out.println("Enter first input:");
+            long firstNumber = userInput.nextLong();
+            
+            System.out.println("Enter operation:");
+            char selectedOperation = userInput.next().charAt(0);
+            
+            System.out.println("Enter second input:");
+            long secondNumber = userInput.nextLong();
+            
+            switch (selectedOperation) {
+                case '+':
+                    System.out.println(firstNumber + secondNumber);
+                    break;
+                case '-':
+                    System.out.println(firstNumber - secondNumber);
+                    break;
+                case '*':
+                    System.out.println("Product is " + firstNumber * secondNumber);
+                    break;
+                case '/':
+                    System.out.println("Quotient is " + firstNumber / secondNumber);
+                    break;
+                default:
+                    System.out.println("Not a valid operation");
+            }
+        }
+        
+        
+    }
+    
+}
