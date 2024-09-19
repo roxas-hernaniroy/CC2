@@ -14,6 +14,7 @@ public class RadixConv {
             if (textInput.equals("STOP")) {
                 System.out.println("Closing...");
                 userInput.close();
+                System.exit(0);
             }
             
             long numberInput = userInput.nextLong();
