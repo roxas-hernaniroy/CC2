@@ -7,7 +7,9 @@ public class RadixConv {
         while (continueProgram) {
             System.out.println("Enter input:");
             
-            String textInput = userInput.nextLine();
+            if (userInput.hasNextLine()) {
+                String textInput = userInput.nextLine();
+            }
             
             if (textInput.equals("STOP")) {
                 System.out.println("Closing...");
