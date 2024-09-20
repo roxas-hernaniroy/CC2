@@ -60,3 +60,32 @@ public class BasicCalculator {
     }
     
 }
+
+
+//Roxas, Hernani Roy B.
+//Sep. 20, 2024
+
+import java.util.Scanner;
+public class BasicCalculator {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+            
+            //user input
+            System.out.print("Enter first number: ");
+            long firstNumber = userInput.nextLong();
+            
+            System.out.print("Enter second number: ");
+            long secondNumber = userInput.nextLong();
+
+            //results
+            System.out.println("The sum of " + firstNumber + " and " + secondNumber + " is " + (firstNumber + secondNumber) + ".");
+            
+            System.out.println("The difference of " + firstNumber + " and " + secondNumber + " is " + (firstNumber - secondNumber) + ".");
+            
+            System.out.println("The product of " + firstNumber + " and " + secondNumber + " is " + (firstNumber * secondNumber) + ".");
+            
+            System.out.println("The quotient of " + firstNumber + " and " + secondNumber + " is " + (firstNumber / secondNumber) + ".");
+            
+            System.out.println("The remainder of " + firstNumber + " and " + secondNumber + " is " + (firstNumber % secondNumber) + ".");
+    }
+}
