@@ -24,7 +24,7 @@ public class RadixConverter {
                 long numberInput = userInput.nextLong();
             
                 System.out.println("Enter desired base:");
-                int radix = userInput.nextByte();
+                int radix = userInput.nextInt();
         
                 switch (radix) {
                     case 16:
