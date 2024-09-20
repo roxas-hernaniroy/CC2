@@ -14,10 +14,11 @@ public class RadixConverter {
                 String textInput = userInput.nextLine();
                 switch (textInput) {
                     case "STOP":
-                        System.out.println("Closing...");
+                        System.out.println("...\n...\n...\nClosing program...");
                         programState++;
                         break;
                     default:
+                        System.out.println("Type STOP to close program.");
                         break;
                 }
             } else {
@@ -40,7 +41,7 @@ public class RadixConverter {
                         System.out.println("Binary Result: " + decimalToBinary);
                         break;
                     default:
-                        System.out.println("Work in progress, choose between 2/8/16");
+                        System.out.println("Choose between 2, 8, or 16 for now.");
                 }
             }
         }
