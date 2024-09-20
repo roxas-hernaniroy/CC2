@@ -5,7 +5,7 @@ public class RadixConverter {
     public static void main(String[] args) {
         
         Scanner userInput = new Scanner(System.in);
-        int programState = 1;
+        byte programState = 1;
         
         while (programState > 0) {
             System.out.println("\nEnter input:");
