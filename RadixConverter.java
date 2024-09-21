@@ -49,8 +49,21 @@ public class RadixConverter {
                         case 10:
                             System.out.println("Input number to be converted: ");
                             long numberInput = userInput.nextLong();
-                            String 
-                            System.out.print
+                            String baseTenToBaseTwo = Long.toString(numberInput, 2);
+                            String baseTenToBaseThree = Long.toString(numberInput; 3);
+                            String baseTenToBaseFour = Long.toString(numberInput, 4);
+                            String baseTenToBaseFive =
+                            String baseTenToBaseSix =
+                            String baseTenToBaseSeven =
+                            String baseTenToBaseEight =
+                            String baseTenToBaseNine =
+                            String baseTenToBaseEleven =
+                            String baseTenToBaseTwelve =
+                            String baseTenToBaseThirteen =
+                            String baseTenToBaseFourteen =
+                            String baseTenToBaseFifteen =
+                            String baseTenToBaseSixteen =
+                            System.out.println("\n" + baseTenTobaseTwo + "\n" + );
                     }
                 }
                 */
