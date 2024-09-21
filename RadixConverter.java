@@ -22,6 +22,38 @@ public class RadixConverter {
                         break;
                 }
             } else {
+                /*
+                System.out.println("Enter origin radix: ")
+                inr originRadix = userInput.nextInt();
+                if (!originRadix.hasNextInt()) {
+                    String originRadixElevenAbove = userInput.nextLine();
+                        switch (originRadixElevenAbove) {
+                            case "11":
+                            case "12":
+                            case "13":
+                            case "14":
+                            case "15":
+                            case "16":
+                        }
+                } else {
+                    switch (originRadix) {
+                        case 2:
+                            
+                        case 3:
+                        case 4:
+                        case 5:
+                        case 6;
+                        case 7:
+                        case 8:
+                        case 9:
+                        case 10:
+                            System.out.println("Input number to be converted: ");
+                            long numberInput = userInput.nextLong();
+                            String 
+                            System.out.print
+                    }
+                }
+                */
                 long numberInput = userInput.nextLong();
             
                 System.out.println("\nEnter desired base:");
