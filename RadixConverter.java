@@ -20,8 +20,10 @@ public static void main(String[] args) {
                 }        
             } else {
                 int radixInput = userInput.nextInt();
-                //for () {
-                }
+                //for (int base = 2, base <= 16, base++) {
+                    //userInput.useRadix(base);
+                    //System.out.println("base" + base + ": " + );
+                //}
                 switch (radixInput) {
                     default:
                         System.out.println("\nTry again, only base2 to base16");
