@@ -25,7 +25,6 @@ public class BinaryCalculator {
                 long numberInput = userInput.nextLong();
                     String decimalToBinary = Long.toString(numberInput, 2);
                     System.out.println("\nBinary Result: " + decimalToBinary);
-                }
             }
         }
     }
