@@ -22,7 +22,10 @@ public static void main(String[] args) {
                 int radixInput = userInput.nextInt();
                 //for (int base = 2, base <= 16, base++) {
                     //userInput.useRadix(base);
-                    //System.out.println("base" + base + ": " + );
+                    //System.out.println("Enter number to be converted: ");
+                    //long numberInput = userInput.nextLong();
+                    //String convertedOutput = Long.toString(numberInput, base);
+                    //System.out.println("base" + base + ": " + convertedOutput);
                 //}
                 switch (radixInput) {
                     default:
