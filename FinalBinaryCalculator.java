@@ -2,7 +2,7 @@
 //Roxas, Hernani Roy B.
 //CITCS 1B-B
 import java.util.Scanner;
-public class BinaryCalculator {
+public class FinalBinaryCalculator {
     public static void main(String[] args) {
         
         Scanner userInput = new Scanner(System.in); 
