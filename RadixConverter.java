@@ -2,7 +2,7 @@
 //CITCS 1B-B
 
 import java.util.Scanner;
-public class RadixConverterII {
+public class RadixConverter {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         
