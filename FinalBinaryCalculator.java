@@ -28,6 +28,7 @@ public class FinalBinaryCalculator {
                     String decimalToBinary = Long.toString(numberInput, 2);
                     System.out.println("\nOutput: " + decimalToBinary);
             }
+            }
         }
     }
 }
