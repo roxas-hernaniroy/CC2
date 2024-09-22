@@ -1,5 +1,5 @@
 package com.rhr2408.javatest1;
-//do not include package above in submission, it's just to test it because NetBeans IDE 22 forces you to use it
+//do not include package above in submission, it's just to test it at home because NetBeans IDE 22 forces you to use it
 
 //V3
 //Roxas, Hernani Roy
