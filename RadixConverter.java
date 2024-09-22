@@ -12,9 +12,9 @@ public class RadixConverter {
         
         System.out.println("\nCurrent radix is " + userInput.radix() + ".");
         
-        byte programState = 2;
+        byte programState = 1;
         
-        while (programState > 1) {
+        while (programState > 0) {
             
             userInput.useRadix(10);
             System.out.println("\nEnter origin radix (2 to 16):");
