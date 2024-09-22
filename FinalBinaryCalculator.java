@@ -13,16 +13,17 @@ public class FinalBinaryCalculator {
             
             if (!userInput.hasNextLong()) { //exit condition
                 String textInput = userInput.nextLine();
-                switch (textInput) {
-                    case "STOP":
-                        System.out.println("\n...Closing program...");
-                        programState--;
-                        break;
-                    default:
-                        System.out.println("\nType STOP to close program.");
-                        break;
+                
+                if {textInput.equals("STOP") {
+                    System.out.println("\nClosing program...");
+                    programState--;
+                    break;
                 }
-            } else { //converter
+                else {
+                    System.out.println("Type STOP to close program.");
+                }
+            } 
+            else { //converter
                 long numberInput = userInput.nextLong();
                     String decimalToBinary = Long.toString(numberInput, 2);
                     System.out.println("\nOutput: " + decimalToBinary);
