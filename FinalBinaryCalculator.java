@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class FinalBinaryCalculator {
     public static void main(String[] args) {
         
-        Scanner userInput = new Scanner(System.in);
-        byte programState = 1;
+        Scanner userInput = new Scanner(System.in); 
         
+        byte programState = 1;
         while (programState > 0) {
             System.out.println("\nEnter input:");
             
