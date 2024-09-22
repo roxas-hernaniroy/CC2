@@ -1,3 +1,69 @@
+package com.rhr2408.javatest1;
+//do not include package above in submission, it's just to test it because NetBeans IDE 22 forces you to use it
+
+//V3
+//Roxas, Hernani Roy
+//CITCS 1B-B
+
+import java.util.Scanner;
+public class RadixConverter {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        
+        System.out.println("\nCurrent radix is " + userInput.radix() + ".");
+        
+        byte programState = 2;
+        
+        while (programState > 1) {
+            
+            userInput.useRadix(10);
+            System.out.println("\nEnter origin radix (2 to 16):");
+            
+            if (!userInput.hasNextInt()) {
+                String otherInputOnRadixField = userInput.nextLine();
+                    if (otherInputOnRadixField.equals("STOP")) {
+                        System.out.println("\nClosing...");
+                        programState--;
+                        break;
+                    }
+            } else {
+                int radixFieldInput = userInput.nextInt();
+            
+                if (radixFieldInput > 1 && radixFieldInput < 17) {
+                    userInput.useRadix(radixFieldInput);
+                } else if (radixFieldInput <= 1 || radixFieldInput >= 17) {
+                    System.out.println("\nUnsupported radix input. Enter a valid radix input.");
+                    continue;
+                }   
+                
+                System.out.println("\nInput radix changed to " + userInput.radix());
+                
+                System.out.println("\nEnter number to convert:");
+            
+                if (!userInput.hasNextLong()) {
+                    String otherInputOnNumberField = userInput.next();
+                    switch (otherInputOnNumberField) {
+                        default:
+                            System.out.println("\nEnter a valid value or type STOP to close.");
+                        case "STOP":
+                            System.out.println("\nClosing...");
+                            programState--;
+                            break;
+                    }
+                } else {
+                    long numberFieldInput = userInput.nextLong();
+                    for (byte base = 2; base <= 16; base++) {
+                    String convertedOutput = Long.toString(numberFieldInput, base);
+                    System.out.println("base" + base + ": " + convertedOutput);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+//V2
 //Roxas, Hernani Roy
 //CITCS 1B-B
 
@@ -49,9 +115,10 @@ public class RadixConverter {
         }
     }
 }
-
+*/
 
 /*
+//V1
 import java.util.Scanner;
 public class RadixConverter {
 public static void main(String[] args) {
