@@ -1,7 +1,6 @@
-package com.rhr2408.javatest1;
-//do not include package above in submission
-
-//V4
+package com.rhr2408.javatest1; //Only used for testing on personal computer with NetBeans IDE 22, because it won't run otherwise. This can be omitted in the submission.
+//------------------------------------------
+//version 4
 //Roxas, Hernani Roy
 //CITCS 1B-B
 
