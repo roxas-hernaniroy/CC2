@@ -56,9 +56,9 @@ public class FinalRadixConverter {
                     }
                     else {
                         long numberFieldInput = userInput.nextLong();
-                        for (byte base = 2; base <= 16; base++) {
-                        String convertedOutput = Long.toString(numberFieldInput, base);
-                        System.out.println("\nbase" + base + ": " + convertedOutput);
+                        for (byte radix = 2; radix <= 16; radix++) {
+                        String convertedOutput = Long.toString(numberFieldInput, radix);
+                        System.out.println("\nbase" + radix + ": " + convertedOutput);
                         }
                     break;
                     }
