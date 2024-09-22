@@ -1,3 +1,57 @@
+//Roxas, Hernani Roy
+//CITCS 1B-B
+
+import java.util.Scanner;
+public class RadixConverterII {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        
+        byte programState = 1;
+        while (programState > 0) {
+            
+            System.out.println("\nEnter origin radix (2 to 16):");
+            
+            if (!userInput.hasNextByte()) {
+                String otherInputOnRadixField = userInput.next();
+                switch (otherInputOnRadixField) {
+                    default:
+                        System.out.println("\nUse a valid origin radix or type STOP to close.");
+                    case "STOP":
+                        System.out.println("\nClosing...");
+                        programState--;
+                        break;
+                }
+            } else {
+                byte radixFieldInput = userInput.nextByte();
+                userInput.useRadix(radixFieldInput);
+                System.out.println("Origin radix is: " + userInput.radix());
+            }
+            
+            System.out.println("\nEnter number to convert:");
+            
+            if (!userInput.hasNextLong()) {
+                String otherInputOnNumberField = userInput.next();
+                switch (otherInputOnNumberField) {
+                    default:
+                        System.out.println("\nEnter a valid value or type STOP to close.");
+                    case "STOP":
+                        System.out.println("\nClosing...");
+                        programState--;
+                        break;
+                }
+            } else {
+                long numberFieldInput = userInput.nextLong();
+                for (byte base = 2; base <= 16; base++) {
+                String convertedOutput = Long.toString(numberFieldInput, base);
+                System.out.println("base" + base + ": " + convertedOutput);
+                }
+            }
+        }
+    }
+}
+
+
+/*
 import java.util.Scanner;
 public class RadixConverter {
 public static void main(String[] args) {
@@ -152,3 +206,4 @@ public static void main(String[] args) {
         }
     }
 }
+*/
