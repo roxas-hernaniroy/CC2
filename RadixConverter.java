@@ -1,4 +1,4 @@
-package com.rhr2408.javatest1; //Only used for testing on personal computer with NetBeans IDE 22, because it won't run otherwise. This can be omitted.
+package com.rhr2408.javatest1; //Only used for testing with NetBeans IDE 22, because it won't run on personal computer otherwise. This can be omitted.
 //version 4
 //------------------------------------------
 //Roxas, Hernani Roy
