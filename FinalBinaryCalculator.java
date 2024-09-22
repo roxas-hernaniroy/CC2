@@ -1,6 +1,4 @@
-//v4
-//Roxas, Hernani Roy B.
-//CITCS 1B-B
+//v5
 import java.util.Scanner;
 public class FinalBinaryCalculator {
     public static void main(String[] args) {
@@ -11,7 +9,7 @@ public class FinalBinaryCalculator {
         while (programState > 0) {
             System.out.println("\nEnter input:");
             
-            if (!userInput.hasNextLong()) { //exit condition
+            if (!userInput.hasNextLong()) { 
                 String textInput = userInput.nextLine();
                 
                 if (textInput.equals("STOP")) {
@@ -23,7 +21,7 @@ public class FinalBinaryCalculator {
                     System.out.println("Type STOP to close program.");
                 }
             } 
-            else { //converter
+            else {
                 long numberInput = userInput.nextLong();
                     String decimalToBinary = Long.toString(numberInput, 2);
                     System.out.println("\nOutput: " + decimalToBinary);
