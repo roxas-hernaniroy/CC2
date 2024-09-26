@@ -4,8 +4,8 @@ public class RadixConverterVII {
         Scanner userInput = new Scanner(System.in);
 
         byte programMainLoop = 1;
-        byte programSubLoopOne = 1;
-        byte programSubLoopTwo = 1;
+        byte programSubLoopOne = 0;
+        byte programSubLoopTwo = 0;
         
         int correctRadixInput;
         String wrongRadixInput;
@@ -14,18 +14,18 @@ public class RadixConverterVII {
 
         while (programMainLoop > 0) {
             userInput.useRadix(10);
+            
             System.out.println("Enter origin radix (2 - 16): ");
-
+            programSubLoopOne = 1;
             while (programSubLoopOne > 0) {
                 if (userInput.hasNextInt()) {
-                    correctRadixInput = userInput.nextInt;
+                    correctRadixInput = userInput.nextInt();
                 
                     if (correctRadixInput > 1 && correctRadixInput < 17) {
                         userInput.useRadix(correctRadixInput);
 
                         System.out.println("\nRadix has been changed to " + userInput.radix());
 
-                        programSubLoopTwo = 1;
                         programSubLoopOne = 0;
                         break;
                     }
@@ -46,9 +46,10 @@ public class RadixConverterVII {
                     }
                 }
             }
-            
+
+            System.out.println("Enter number to be converted: ");
+            programSubLoopTwo = 1;
             while (programSubLoopTwo > 0) {
-                System.out.println("Enter number to be converted: ");
                 if (userInput.hasNextLong()) {
                     correctNumberInput = userInput.nextLong();
 
@@ -57,7 +58,6 @@ public class RadixConverterVII {
                         System.out.println("\nbase" + radix + ": " + convertedOutput);
                     }
 
-                    programSubLoopOne = 1;
                     programSubLoopTwo = 0;
                     break;
                 }
