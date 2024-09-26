@@ -42,7 +42,7 @@ public class RadixConverterVII {
                         break;
                     }
                     else {
-                        System.out.println("\nEnter a valid input or type STOP to close.")
+                        System.out.println("\nEnter a valid input or type STOP to close.");
                     }
                 }
             }
@@ -70,7 +70,7 @@ public class RadixConverterVII {
                         break;
                     }
                     else {
-                        System.out.println("\nEnter a valid input or type STOP to close.")
+                        System.out.println("\nEnter a valid input or type STOP to close.");
                     }
                 }
             }
