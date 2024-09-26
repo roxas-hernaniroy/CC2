@@ -48,6 +48,7 @@ public class RadixConverterVII {
             }
             
             while (programSubLoopTwo > 0) {
+                System.out.println("Enter number to be converted: ");
                 if (userInput.hasNextLong()) {
                     correctNumberInput = userInput.nextLong();
 
