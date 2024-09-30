@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class RadixConverter8 {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
-        
-        System.out.println("\nCurrent radix is " + userInput.radix() + "."); //displays current radix
-        
 
         byte programState = 1;
         int correctRadixInput;
