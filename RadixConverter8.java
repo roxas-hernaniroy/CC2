@@ -61,7 +61,7 @@ public class RadixConverter8 {
 
                     for (byte radix = 2; radix <= 16; radix++) {
                         String convertedOutput = Long.toString(correctNumberInput, radix);
-                        System.out.println("\nbase" + radix + ": " + convertedOutput);
+                        System.out.println("base" + radix + ": " + convertedOutput);
                     }
                     break;
                 }
