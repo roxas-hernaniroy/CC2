@@ -1,3 +1,4 @@
+package triplebasecalculator;
 import java.util.Scanner;
 public class TripleBaseCalculator {
     public static void main(String[] args) {
@@ -7,39 +8,45 @@ public class TripleBaseCalculator {
         userInput.useRadix(10); //reset
         
         System.out.println("Enter first number's input radix: ");
-        int firstInputRadix = userInput.nextInt();
+        int firstRadix = userInput.nextInt();
+        userInput.useRadix(firstRadix);
+        
         System.out.println("Enter first number's value: ");
-        long firstInputValue = userInput.nextInt();
+        long firstValue = userInput.nextInt();
         
         //
         userInput.useRadix(10); //reset
         
         System.out.println("Enter second number's input radix: ");
-        int secondInputRadix = userInput.nextInt();
+        int secondRadix = userInput.nextInt();
+        userInput.useRadix(secondRadix);
+        
         System.out.println("Enter second number's value: ");
-        long secondInputValue = userInput.nextLong();
+        long secondValue = userInput.nextLong();
         
         //
         System.out.println("Select operation: ");
         String selectedOperation = userInput.nextLine();
         
+        long result;
         switch (selectedOperation) {
-            case "+":
-                
+            case "+": 
+                result = firstValue + secondValue;
             case "-":
-                
+                result = firstValue - secondValue;
             case "*":
-                
+                result = firstValue * secondValue;
             case "/":
-                
+                result = firstValue / secondValue;
             case "%":
-                
+                result = firstValue % secondValue;
                 
         //
         System.out.println("Select display radix: ");
         int resultDisplayRadix = userInput.nextInt();
+        String resultOutput = Long.toString(result, resultDisplayRadix);
         
-        System.out.println("Result is: ");
+        System.out.println("Result is: " + resultOutput);
         }
     }
     
