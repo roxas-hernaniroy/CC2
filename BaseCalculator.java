@@ -24,6 +24,8 @@ public class TripleBaseCalculator {
         System.out.println("Enter second number's value: ");
         long secondValue = userInput.nextLong();
         
+        userInput.nextLine();
+        
         //
         System.out.println("Select operation: ");
         String selectedOperation = userInput.nextLine();
@@ -49,5 +51,4 @@ public class TripleBaseCalculator {
         System.out.println("Result is: " + resultOutput);
         }
     }
-    
 }
