@@ -29,14 +29,19 @@ public class InterbaseCalculator {
         switch (selectedOperation) {
             case "+": 
                 result = firstValue + secondValue;
+                break;
             case "-":
                 result = firstValue - secondValue;
+                break;
             case "*":
                 result = firstValue * secondValue;
+                break;
             case "/":
                 result = firstValue / secondValue;
+                break;
             case "%":
                 result = firstValue % secondValue;
+                break;
         
         System.out.println("Select display radix: ");
         int resultDisplayRadix = userInput.nextInt();
