@@ -11,7 +11,6 @@ public class InterbaseCalculator {
         System.out.println("Enter first number's value: ");
         long firstValue = userInput.nextInt();
         
-        //
         userInput.useRadix(10); //reset
         
         System.out.println("Enter second number's input radix: ");
@@ -23,11 +22,10 @@ public class InterbaseCalculator {
         
         userInput.useRadix(10); //reset
         
-        //
         System.out.println("Select operation: ");
         String selectedOperation = userInput.nextLine();
         
-        double result;
+        long result;
         switch (selectedOperation) {
             case "+": 
                 result = firstValue + secondValue;
@@ -43,7 +41,7 @@ public class InterbaseCalculator {
         //
         System.out.println("Select display radix: ");
         int resultDisplayRadix = userInput.nextInt();
-        String resultOutput = Double.toString(result, resultDisplayRadix);
+        String resultOutput = Long.toString(result, resultDisplayRadix);
         
         System.out.println("Result is: " + resultOutput);
         }
