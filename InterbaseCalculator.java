@@ -19,6 +19,7 @@ public class InterbaseCalculator {
         
         System.out.println("Enter second number's value: ");
         long secondValue = userInput.nextLong();
+        userInput.nextLine();
         
         userInput.useRadix(10); //reset
         
