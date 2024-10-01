@@ -3,7 +3,6 @@ public class InterbaseCalculator {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         
-        //
         System.out.println("Enter first number's input radix: ");
         int firstRadix = userInput.nextInt();
         userInput.useRadix(firstRadix);
@@ -38,8 +37,7 @@ public class InterbaseCalculator {
                 result = firstValue / secondValue;
             case "%":
                 result = firstValue % secondValue;
-                
-        //
+        
         System.out.println("Select display radix: ");
         int resultDisplayRadix = userInput.nextInt();
         String resultOutput = Long.toString(result, resultDisplayRadix);
