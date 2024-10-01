@@ -4,8 +4,6 @@ public class InterbaseCalculator {
         Scanner userInput = new Scanner(System.in);
         
         //
-        userInput.useRadix(10); //reset
-        
         System.out.println("Enter first number's input radix: ");
         int firstRadix = userInput.nextInt();
         userInput.useRadix(firstRadix);
@@ -23,7 +21,7 @@ public class InterbaseCalculator {
         System.out.println("Enter second number's value: ");
         long secondValue = userInput.nextLong();
         
-        userInput.nextLine();
+        userInput.useRadix(10); //reset
         
         //
         System.out.println("Select operation: ");
