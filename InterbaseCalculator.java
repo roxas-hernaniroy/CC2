@@ -1,6 +1,6 @@
 package triplebasecalculator;
 import java.util.Scanner;
-public class TripleBaseCalculator {
+public class InterbaseCalculator {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         
