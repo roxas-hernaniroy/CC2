@@ -1,4 +1,3 @@
-package triplebasecalculator;
 import java.util.Scanner;
 public class InterbaseCalculator {
     public static void main(String[] args) {
