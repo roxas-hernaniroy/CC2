@@ -30,7 +30,7 @@ public class InterbaseCalculator {
         System.out.println("Select operation: ");
         String selectedOperation = userInput.nextLine();
         
-        long result;
+        double result;
         switch (selectedOperation) {
             case "+": 
                 result = firstValue + secondValue;
@@ -46,7 +46,7 @@ public class InterbaseCalculator {
         //
         System.out.println("Select display radix: ");
         int resultDisplayRadix = userInput.nextInt();
-        String resultOutput = Long.toString(result, resultDisplayRadix);
+        String resultOutput = Double.toString(result, resultDisplayRadix);
         
         System.out.println("Result is: " + resultOutput);
         }
