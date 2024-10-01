@@ -25,7 +25,8 @@ public class InterbaseCalculator {
         System.out.println("Select operation: ");
         String selectedOperation = userInput.nextLine();
         
-        long result;
+        long result = 0;
+        boolean correctOperation = true;
         switch (selectedOperation) {
             case "+": 
                 result = firstValue + secondValue;
@@ -42,12 +43,17 @@ public class InterbaseCalculator {
             case "%":
                 result = firstValue % secondValue;
                 break;
-        
-        System.out.println("Select display radix: ");
-        int resultDisplayRadix = userInput.nextInt();
-        String resultOutput = Long.toString(result, resultDisplayRadix);
-        
-        System.out.println("Result is: " + resultOutput);
+            default:
+                System.out.println("Try again.");
+                correctOperation = false;
+        }
+
+        if (correctOperation) {
+            System.out.println("Select display radix: ");
+            int resultDisplayRadix = userInput.nextInt();
+            String resultOutput = Long.toString(result, resultDisplayRadix);
+
+            System.out.println("Result is: " + resultOutput);
         }
     }
 }
