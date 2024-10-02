@@ -3,7 +3,7 @@ public class DiscountCalculator {
     public static void main (String[] args) {
         Scanner userInput = new Scanner(System.in);
 
-        int purchaseTotal = 0;
+        int purchaseTotal;
 
         System.out.println("Enter the total purchase amount: ");
         purchaseTotal = userInput.nextInt();
@@ -30,6 +30,5 @@ public class DiscountCalculator {
             double finalPriceFifteenPercent = purchaseTotal - fifteenPercentDiscount;
             System.out.printf("Final price after discount\t" + "%.2f%n", finalPriceFifteenPercent);
         }
-        userInput.close();
     }
 }
