@@ -1,7 +1,3 @@
-//Roxas, Hernani Roy B.
-//CITCS 1B-B
-//CC2
-
 import java.util.Scanner;
 public class GroceryShoppingCalculator {
     public static void main(String[] args) {
@@ -36,21 +32,17 @@ public class GroceryShoppingCalculator {
         
         //calculations
         double itemAllSubtotal = itemOneSubtotal + itemTwoSubtotal + itemThreeSubtotal;
-        float itemAllSubtotalF = (float)itemAllSubtotal; //casting to float for result readability
         
         double allSubtotalDiscount = itemAllSubtotal * 0.05;
-        float allSubtotalDiscountF = (float)allSubtotalDiscount;
         
         double salesTax = (itemAllSubtotal - allSubtotalDiscount) * 0.12;
-        float salesTaxF = (float)salesTax;
         
         double finalTotal = (itemAllSubtotal - allSubtotalDiscount) + salesTax;
-        float finalTotalF = (float)finalTotal;
         
         //results
-        System.out.println("\nSubtotal:\t" + itemAllSubtotalF);
-        System.out.println("Discount:\t" + allSubtotalDiscountF);
-        System.out.println("Sales tax:\t" + salesTaxF);
-        System.out.println("Final total:\t" + finalTotalF);
+        System.out.printf("\nSubtotal:\t" + "PHP " + "%.2f%n", itemAllSubtotal);
+        System.out.printf("Discount:\t" + "PHP " + "%.2f%n", allSubtotalDiscount);
+        System.out.printf("Sales tax:\t" + "PHP " + "%.2f%n", salesTax);
+        System.out.printf("Final total:\t" + "PHP " + "%.2f%n", finalTotal);
     }
 }
