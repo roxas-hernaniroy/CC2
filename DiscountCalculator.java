@@ -22,10 +22,14 @@ public class DiscountCalculator {
             System.out.println("Discount applied:\t10%");
             double tenPercentDiscount = purchaseTotal * 0.1;
             double finalPriceTenPercent = purchaseTotal - tenPercentDiscount;
-
+            System.out.printf("Final price after discount\t" + "%.2f%n", finalPriceTenPercent);
         }
         else if (purchaseTotal > 10000) {
-
+            System.out.println("Discount applied:\t15%");
+            double fifteenPercentDiscount = purchaseTotal * 0.15;
+            double finalPriceFifteenPercent = purchaseTotal - fifteenPercentDiscount;
+            System.out.printf("Final price after discount\t" + "%.2f%n", finalPriceFifteenPercent);
         }
+        userInput.close();
     }
 }
