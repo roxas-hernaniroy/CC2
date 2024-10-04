@@ -51,9 +51,23 @@ public class InterbaseCalculator {
         if (correctOperation) {
             System.out.println("Select display radix: ");
             int resultDisplayRadix = userInput.nextInt();
-            String resultOutput = Long.toString(result, resultDisplayRadix);
 
-            System.out.println("Result is: " + resultOutput);
+            if (resultDisplayRadix == 2) {
+                String binaryString = Long.toBinaryString(result);
+                
+                int paddingLength = (4 - (binaryString.length() % 4)) % 4;
+                binaryString = "0".repeat(paddingLength) + binaryString;
+
+                System.out.print("Result is: ");
+                for (int i = 0; i < binaryString.length(); i += 4) {
+                    System.out.printf("%s ", binaryString.substring(i, i + 4));
+                }
+                System.out.println();
+            }
+            else {
+                String resultOutput = Long.toString(result, resultDisplayRadix);
+                System.out.println("Result is: " + resultOutput);
+            }
         }
     }
 }
