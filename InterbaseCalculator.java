@@ -22,7 +22,7 @@ public class InterbaseCalculator {
         
         userInput.useRadix(10); //reset
         
-        System.out.println("Select operation: ");
+        System.out.println("Select operation [ + , - , * , / , %]: ");
         String selectedOperation = userInput.nextLine();
         
         long result = 0;
@@ -58,7 +58,7 @@ public class InterbaseCalculator {
                 int paddingLength = (4 - (binaryResultOutput.length() % 4)) % 4;
                 binaryResultOutput = "0".repeat(paddingLength) + binaryResultOutput;
 
-                System.out.print("Result is: ");
+                System.out.println("Result is: ");
                 for (int binaryIndex = 0; binaryIndex < binaryResultOutput.length(); binaryIndex += 4) {
                     System.out.printf("%s ", binaryResultOutput.substring(binaryIndex, binaryIndex + 4));
                 }
