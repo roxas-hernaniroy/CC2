@@ -53,14 +53,14 @@ public class InterbaseCalculator {
             int resultDisplayRadix = userInput.nextInt();
 
             if (resultDisplayRadix == 2) {
-                String binaryString = Long.toBinaryString(result);
+                String binaryOutput = Long.toBinaryString(result);
                 
-                int paddingLength = (4 - (binaryString.length() % 4)) % 4;
-                binaryString = "0".repeat(paddingLength) + binaryString;
+                int paddingLength = (4 - (binaryOutput.length() % 4)) % 4;
+                binaryOutput = "0".repeat(paddingLength) + binaryOutput;
 
                 System.out.print("Result is: ");
-                for (int i = 0; i < binaryString.length(); i += 4) {
-                    System.out.printf("%s ", binaryString.substring(i, i + 4));
+                for (int binaryIndex = 0; binaryIndex < binaryOutput.length(); binaryIndex += 4) {
+                    System.out.printf("%s ", binaryOutput.substring(binaryIndex, binaryIndex + 4));
                 }
                 System.out.println();
             }
