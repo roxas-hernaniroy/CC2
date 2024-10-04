@@ -59,9 +59,11 @@ public class InterbaseCalculator {
                 binaryResultOutput = "0".repeat(paddingLength) + binaryResultOutput;
 
                 System.out.println("Result is: ");
+
                 for (int binaryIndex = 0; binaryIndex < binaryResultOutput.length(); binaryIndex += 4) {
                     System.out.printf("%s ", binaryResultOutput.substring(binaryIndex, binaryIndex + 4));
                 }
+                
                 System.out.println();
             }
             else {
