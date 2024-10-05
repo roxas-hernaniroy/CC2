@@ -1,25 +1,32 @@
 import java.util.Scanner;
-public class AttendanceSystem {
+public class InterbaseCalculator {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
 
         int totalStudents = 0;
-        char presentState = N;
+        String presentState = "N";
         int totalPresent = 0;
         int totalAbsent = 0;
 
         System.out.println("Total number of students: ");
         totalStudents = userInput.nextInt();
+        userInput.nextLine();
 
-        for (int studentIndex = 0, studentIndex <= totalStudents, studentIndex++) {
-            System.out.print("Is student " + studentIndex + " present? [Y/N]: ");
-            presentState = userInput.nextChar();
+        for (int studentIndex = 0; studentIndex < totalStudents; studentIndex++) {
+            System.out.print("Is student " + (studentIndex + 1) + " present? [Y/N]: ");
+            presentState = userInput.nextLine();
 
-            if (presentState = 'Y') {
-                totalPresent++;
-            }
-            else if (presentState = 'N') {
-                totalAbsent++;
+            switch (presentState.toUpperCase()) {
+                case "Y":
+                    totalPresent++;
+                    break;
+                case "N":
+                    totalAbsent++;
+                    break;
+                default:
+                    System.out.println("Invalid value.");
+                    studentIndex--;
+                    break;
             }
         }
         System.out.println("Total present: " + totalPresent);
