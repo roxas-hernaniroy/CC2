@@ -4,8 +4,9 @@ public class AttendanceSystem {
         Scanner userInput = new Scanner(System.in);
 
         int totalStudents = 0;
-        char presenrState = N;
+        char presentState = N;
         int totalPresent = 0;
+        int totalAbsent = 0;
 
         System.out.println("Total number of students: ");
         totalStudents = userInput.nextInt();
@@ -21,5 +22,7 @@ public class AttendanceSystem {
                 totalAbsent++;
             }
         }
+        System.out.println("Total present: " + totalPresent);
+        System.out.println("Total absent: " + totalAbsent);
     }
 }
