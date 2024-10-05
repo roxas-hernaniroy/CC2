@@ -18,11 +18,11 @@ public class OrderSystem {
             System.exit(0);
         }
         else if (menuSelection = 5) {
-            System.out.println("Exiting program."
+            System.out.println("Exiting program.");
             System.exit(0);
         }
 
-        System.out.print("Enter quantity: );
+        System.out.print("Enter quantity: ");
         quantitySelection = userInput.nextInt();
         
         if (quantitySelection <= 0) {
