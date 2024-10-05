@@ -13,7 +13,7 @@ public class InterbaseCalculator {
         userInput.nextLine();
 
         for (int studentIndex = 0; studentIndex < totalStudents; studentIndex++) {
-            System.out.print("Is student " + (studentIndex + 1) + " present? [Y/N]: ");
+            System.out.println("Is student " + (studentIndex + 1) + " present? [Y/N]: ");
             presentState = userInput.nextLine();
 
             switch (presentState.toUpperCase()) {
