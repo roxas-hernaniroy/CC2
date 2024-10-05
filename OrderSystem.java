@@ -8,7 +8,7 @@ public class OrderSystem {
         int quantitySelection = 0;
         int totalCost = 0;
 
-        System.out.println("MENU\n1. Burger\t- PHP 100\n2. Fries\t- PHP  50\n3. Soda\t- PHP  30\n4. Ice Cream\t- PHP  45\n5. Exit);
+        System.out.println("MENU\n1. Burger\t- PHP 100\n2. Fries\t- PHP  50\n3. Soda\t- PHP  30\n4. Ice Cream\t- PHP  45\n5. Exit");
     
         System.out.print("Enter menu number: ");
         menuSelection = userInput.nextInt();
