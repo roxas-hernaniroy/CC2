@@ -3,8 +3,8 @@ public class InterbaseCalculator {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
 
-        int totalStudents = 0;
-        String presentState = "N";
+        int totalStudents;
+        String presentState;
         int totalPresent = 0;
         int totalAbsent = 0;
 
