@@ -1,3 +1,6 @@
+//Roxas, Hernani Roy B.
+//CITCS 1B-B
+
 import java.util.Scanner;
 public class AttendanceSystem {
     public static void main(String[] args) {
@@ -12,8 +15,8 @@ public class AttendanceSystem {
         totalStudents = userInput.nextInt();
         userInput.nextLine();
 
-        for (int studentIndex = 0; studentIndex < totalStudents; studentIndex++) {
-            System.out.println("Is student " + (studentIndex + 1) + " present? [Y/N]: ");
+        for (int studentIndex = 1; studentIndex <= totalStudents; studentIndex++) {
+            System.out.println("Is student " + (studentIndex) + " present? [Y/N]: ");
             presentState = userInput.nextLine();
 
             switch (presentState.toUpperCase()) {
@@ -31,5 +34,6 @@ public class AttendanceSystem {
         }
         System.out.println("Total present: " + totalPresent);
         System.out.println("Total absent: " + totalAbsent);
+        userInput.close();
     }
 }
