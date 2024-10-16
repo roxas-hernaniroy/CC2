@@ -1,3 +1,6 @@
+//Roxas, Hernani Roy B.
+//CITCS 1B-B
+
 import java.util.Scanner;
 import java.util.regex.*;
 public class PasswordValidation {
