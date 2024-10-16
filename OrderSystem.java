@@ -1,3 +1,6 @@
+//Roxas, Hernani Roy B.
+//CITCS 1B-B
+
 import java.util.Scanner;
 public class OrderSystem {
     public static void main(String[] args) {
@@ -8,7 +11,7 @@ public class OrderSystem {
         int quantitySelection = 0;
         int totalCost = 0;
 
-        System.out.println("MENU\n1. Burger\t- PHP 100\n2. Fries\t- PHP  50\n3. Soda\t- PHP  30\n4. Ice Cream\t- PHP  45\n5. Exit");
+        System.out.println("MENU\n1. Burger\t\t- PHP 100\n2. Fries\t\t- PHP  50\n3. Soda\t\t\t- PHP  30\n4. Ice Cream\t- PHP  45\n5. Exit");
     
         System.out.print("Enter menu number: ");
         menuSelection = userInput.nextInt();
@@ -17,7 +20,7 @@ public class OrderSystem {
             System.out.println("Invalid order.");
             System.exit(0);
         }
-        else if (menuSelection = 5) {
+        else if (menuSelection == 5) {
             System.out.println("Exiting program.");
             System.exit(0);
         }
@@ -34,11 +37,11 @@ public class OrderSystem {
             case 1:
                 System.out.println("You have ordered " + quantitySelection + " burgers.");
                 totalCost = 100 * quantitySelection;
-                break:
+                break;
             case 2:
                 System.out.println("You have ordered " + quantitySelection + " fries.");
                 totalCost = 50 * quantitySelection;
-                break:
+                break;
             case 3:
                 System.out.println("You have ordered " + quantitySelection + " soda.");
                 totalCost = 30 * quantitySelection;
@@ -49,5 +52,6 @@ public class OrderSystem {
                 break;
         }
         System.out.println("Total amount: " + totalCost);
+        userInput.close();
     }
 }
