@@ -29,7 +29,6 @@ public class AttendanceSystem {
                 default:
                     System.out.println("Invalid value.");
                     studentIndex--;
-                    break;
             }
         }
         System.out.println("Total present: " + totalPresent);
