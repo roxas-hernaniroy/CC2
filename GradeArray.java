@@ -27,7 +27,7 @@ public class GradeArray {
         
         double gradesAverage = gradeSum / 5;
         
-        System.out.printf("Average grade:\t" + "%.2f", gradesAverage);
+        System.out.printf("\nAverage grade:\t" + "%.2f", gradesAverage);
         System.out.println("\nHighest grade:\t" + gradesHigh + "\nLowest grade:\t" + gradesLow);
     }
 }
