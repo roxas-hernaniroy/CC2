@@ -12,7 +12,7 @@ public class InventoryCalc {
             System.out.println("Enter stock level of item " + (invIndex + 1) + ":\t");
             itemStock[invIndex] = userInput.nextInt();
             
-            System.out.println("Enter stock price of item " + (invIndex + 1) + ":\t");
+            System.out.println("Enter price of item " + (invIndex + 1) + ":\t");
             itemPrice[invIndex] = userInput.nextInt();
             
             invValue = invValue + (itemStock[invIndex] * itemPrice[invIndex]);
