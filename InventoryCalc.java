@@ -8,7 +8,7 @@ public class InventoryCalc {
         int[] itemPrice = new int[10];
         double invValue = 0;
         
-        for (int invIndex = 0; invIndex <= 9; invIndex++){
+        for (int invIndex = 0; invIndex < 10; invIndex++){
             System.out.println("Enter stock level of item " + (invIndex + 1) + ":\t");
             itemStock[invIndex] = userInput.nextInt();
             
