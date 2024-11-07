@@ -1,5 +1,3 @@
-package javaapplication72;
-
 import java.util.Scanner;
 public class InventoryCalc {
 
