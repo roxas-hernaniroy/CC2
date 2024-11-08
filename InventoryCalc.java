@@ -1,11 +1,10 @@
 import java.util.Scanner;
-public class InventoryCalc {
-
+public class InventoryManagement {
     public static void main(String[] args) {
-        Scanner userInput = new Scanner(System.in);
+            Scanner userInput = new Scanner(System.in);
         
         int[] itemStock = new int[10];
-        int[] itemPrice = new int[10];
+        double[] itemPrice = new double[10];
         double invValue = 0;
         
         for (int invIndex = 0; invIndex < 10; invIndex++){
@@ -13,11 +12,12 @@ public class InventoryCalc {
             itemStock[invIndex] = userInput.nextInt();
             
             System.out.println("Enter price of item " + (invIndex + 1) + ":\t");
-            itemPrice[invIndex] = userInput.nextInt();
+            itemPrice[invIndex] = userInput.nextDouble();
             
             invValue = invValue + (itemStock[invIndex] * itemPrice[invIndex]);
         }
-        
-        System.out.printf("Total inventory value:\t" + "&.2f", invValue);
+
+        System.out.printf("Total inventory value:\t%.2f", invValue);
+        userInput.close();
     }
 }
