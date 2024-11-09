@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.regex.*;
-public class InventoeyCalc {
+public class InventoryCalc {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         
