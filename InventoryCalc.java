@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.regex.*;
-public class InventoryCalc {
+public class InventoeyCalc {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         
@@ -15,9 +15,8 @@ public class InventoryCalc {
                 System.out.println("Enter stock level of item " + (invIndex + 1) + ":\t");
                 String stockInput = userInput.nextLine();
                 Matcher checkStockMatch = inputCheck.matcher(stockInput);
-                boolean foundStockMatch = checkStockMatch.find();
             
-                if (foundStockMatch) {
+                if (checkStockMatch.find()) {
                     itemStock[invIndex] = Integer.parseInt(stockInput);
                     break;
                 } else {
@@ -29,9 +28,8 @@ public class InventoryCalc {
                 System.out.println("Enter price of item " + (invIndex + 1) + ":\t");
                 String priceInput = userInput.nextLine();
                 Matcher checkPriceMatch = inputCheck.matcher(priceInput);
-                boolean foundPriceMatch = checkPriceMatch.find();
                 
-                if (foundPriceMatch) {
+                if (checkPriceMatch.find()) {
                     itemPrice[invIndex] = Double.parseDouble(priceInput);
                     break;
                 } else {
