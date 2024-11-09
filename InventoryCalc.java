@@ -1,16 +1,19 @@
 import java.util.Scanner;
 import java.util.regex.*;
-public class InventoryCalc {
+public class TrialSpace {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
-        
         Pattern inputCheck = Pattern.compile("^[0-9]+$");
+
+        System.out.println("How many different products are being tallied?:\t");
+        int uniqueProducts = userInput.nextInt();
+        userInput.nextLine();
         
-        int[] itemStock = new int[10];
-        double[] itemPrice = new double[10];
+        int[] itemStock = new int[uniqueProducts];
+        double[] itemPrice = new double[uniqueProducts];
         double invValue = 0;
         
-        for (int invIndex = 0; invIndex < 10; invIndex++){
+        for (int invIndex = 0; invIndex < uniqueProducts; invIndex++){
             while (true) {
                 System.out.println("Enter stock level of item " + (invIndex + 1) + ":\t");
                 String stockInput = userInput.nextLine();
