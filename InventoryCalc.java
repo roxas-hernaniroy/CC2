@@ -1,10 +1,10 @@
 import java.util.Scanner;
 import java.util.regex.*;
-public class InventoryManagement {
+public class TrialSpace {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         
-        Pattern inputCheck = Pattern.compile("[a-zA-Z]");
+        Pattern inputCheck = Pattern.compile("^[0-9]+$");
         
         int[] itemStock = new int[10];
         double[] itemPrice = new double[10];
@@ -14,30 +14,28 @@ public class InventoryManagement {
             while (true) {
                 System.out.println("Enter stock level of item " + (invIndex + 1) + ":\t");
                 String stockInput = userInput.nextLine();
-                Matcher checkStockMismatch = inputCheck.matcher(stockInput);
-                boolean foundStockMismatch = checkStockMismatch.find();
+                Matcher checkStockMatch = inputCheck.matcher(stockInput);
+                boolean foundStockMatch = checkStockMatch.find();
             
-                if (foundStockMismatch) {
-                    System.out.println("Invalid input, retry.");
-                } else {
-                    int correctStockInput = Integer.valueOf(stockInput);
-                    itemStock[invIndex] = correctStockInput;
+                if (foundStockMatch) {
+                    itemStock[invIndex] = Integer.parseInt(stockInput);
                     break;
+                } else {
+                    System.out.println("Invalid input, retry.");
                 }
             }
             
             while (true) {
                 System.out.println("Enter price of item " + (invIndex + 1) + ":\t");
                 String priceInput = userInput.nextLine();
-                Matcher checkPriceMismatch = inputCheck.matcher(priceInput);
-                boolean foundPriceMismatch = checkPriceMismatch.find();
+                Matcher checkPriceMatch = inputCheck.matcher(priceInput);
+                boolean foundPriceMatch = checkPriceMatch.find();
                 
-                if (foundPriceMismatch) {
-                    System.out.println("Invalid input, retry.");
-                } else {
-                    double correctPriceInput = Double.valueOf(priceInput);
-                    itemPrice[invIndex] = correctPriceInput;
+                if (foundPriceMatch) {
+                    itemPrice[invIndex] = Double.parseDouble(priceInput);
                     break;
+                } else {
+                    System.out.println("Invalid input, retry.");
                 }
             }
             
@@ -48,30 +46,3 @@ public class InventoryManagement {
         userInput.close();
     }
 }
-
-/*
-import java.util.Scanner;
-public class InventoryManagement {
-    public static void main(String[] args) {
-            Scanner userInput = new Scanner(System.in);
-        
-        int[] itemStock = new int[10];
-        double[] itemPrice = new double[10];
-        double invValue = 0;
-        
-        for (int invIndex = 0; invIndex < 10; invIndex++){
-            System.out.println("Enter stock level of item " + (invIndex + 1) + ":\t");
-            itemStock[invIndex] = userInput.nextInt();
-            
-            System.out.println("Enter price of item " + (invIndex + 1) + ":\t");
-            itemPrice[invIndex] = userInput.nextDouble();
-            
-            invValue = invValue + (itemStock[invIndex] * itemPrice[invIndex]);
-        }
-
-        System.out.printf("Total inventory value:\t%.2f", invValue);
-        userInput.close();
-    }
-}
-
-*/
