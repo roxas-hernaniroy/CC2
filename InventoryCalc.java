@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.regex.*;
-public class TrialSpace {
+public class InventoryCalc {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         Pattern inputCheck = Pattern.compile("^[0-9]+$");
