@@ -1,9 +1,12 @@
+//Roxas, Hernani Roy
+//CITCS 1B-B
+
 import java.util.Scanner;
 import java.util.regex.*;
 public class InventoryCalc {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
-        Pattern inputCheck = Pattern.compile("^[0-9]+$");
+        Pattern inputCheck = Pattern.compile("^[0-9]+$"); //regex pattern for numbers only
 
         System.out.println("How many different products are being tallied?:\t");
         int uniqueProducts = userInput.nextInt();
