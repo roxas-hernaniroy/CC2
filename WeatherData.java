@@ -8,6 +8,7 @@ public class WeatherData {
             for (int j = 0; j < weather[i].length; j++) {
                 System.out.println("Input temperature of city " + (i + 1) + " for day " + (j + 1)+ ":");
                 weather[i][j] = userInput.nextDouble();
+                int total = 0;
             }
         }
         
