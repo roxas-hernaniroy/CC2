@@ -23,8 +23,8 @@ public class WeatherData {
         }
 
         for (int resultRow = 0; resultRow < 3; resultRow++) {
-            System.out.printf("The average temperature for city %d is: %.2f\n", (resultRow + 1), average[resultRow]);
-            System.out.printf("The highest temperature for city %d is: %.2f\n", (resultRow + 1), highest[resultRow]);
+            System.out.printf("The average temperature for city %d is: %.2f degrees Celsius\n", (resultRow + 1), average[resultRow]);
+            System.out.printf("The highest temperature for city %d is: %.2f degrees Celsius\n", (resultRow + 1), highest[resultRow]);
         }
     }
 }
