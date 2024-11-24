@@ -1,4 +1,9 @@
 import java.util.Scanner;
+
+class InsufficientFundsException extends Exception {
+    public InsufficeinteFundsException
+}
+
 public class BankingSystemExceptionHanding {
     public static void main(String[] args) {
         try {
