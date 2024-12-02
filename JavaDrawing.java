@@ -1,4 +1,4 @@
-import java.awt.*;
+/*import java.awt.*;
 import javax.swing.*; //JOption import
 
 public class JavaDrawing extends Canvas {
@@ -25,4 +25,32 @@ public class JavaDrawing extends Canvas {
         dialogueFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         dialogueFrame.setVisible(true);
     }
+}*/
+
+import java.awt.*;
+import javax.swing.*;
+
+public class JavaDrawing extends Canvas {
+    public void paint(Graphics graphics) {
+        graphics.setColor(Color.GRAY);
+        graphics.fillRect(0,0,500,500);
+        graphics.setColor(Color.DARK_GRAY);
+        graphics.fillOval(100, 100, 250, 250);
+        graphics.drawLine(100, 225, 100, 400);
+        graphics.drawLine(350, 225, 350, 400);
+        graphics.drawLine(100,400,150,225);
+        graphics.setColor(Color.RED);
+        graphics.fillOval(150, 200, 50, 50);
+        graphics.fillOval(250, 200, 50, 50);
+    }
+
+    public static void main (String[] args) {
+        JFrame dialogueFrame = new JFrame("Java Drawing");
+        JavaDrawing canvas = new JavaDrawing();
+        dialogueFrame.setSize(500,500);
+        dialogueFrame.add(canvas);
+        dialogueFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dialogueFrame.setVisible(true);
+    }
 }
+
