@@ -54,3 +54,38 @@ public class JavaDrawing extends Canvas {
     }
 }
 
+--------------
+
+import java.awt.*;
+import javax.swing.*;
+
+public class JavaDrawing extends Canvas {
+    public void paint(Graphics graphics) {
+
+        setBackground(Color.GRAY);
+
+        graphics.setColor(Color.DARK_GRAY);
+        graphics.fillOval(100, 100, 250, 250);
+        graphics.drawLine(100, 100, 100, 220);
+        graphics.drawLine(350, 100, 350, 220);
+        int[] rightEarX = {100, 150, 100};
+        int[] rightEarY = {350, 300, 350};
+        int[] leftEarX = {350, 300, 350};
+        int[] leftEarY = {};
+        graphics.fillPolygon(rightEarX, rightEarY, 3);
+
+        graphics.setColor(Color.RED);
+        graphics.fillOval(150, 200, 50, 50);
+        graphics.fillOval(250, 200, 50, 50);
+    }
+
+    public static void main (String[] args) {
+        JFrame dialogueFrame = new JFrame("Java Drawing");
+        JavaDrawing canvas = new JavaDrawing();
+        dialogueFrame.setSize(500,500);
+        dialogueFrame.add(canvas);
+        dialogueFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        dialogueFrame.setVisible(true);
+    }
+}
+
