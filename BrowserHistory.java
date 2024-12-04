@@ -1,4 +1,43 @@
-class Node {
+import java.util.LinkedList;
+import java.util.Scanner;
+public class BrowserHistory {
+    public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
+        LinkedList<String> history = new LinkedList<String>();
+
+        while (true) { 
+            String current = history.peekLast();
+            if (current == null) {
+                current = "the home page";
+            }
+
+            String pastPage;
+
+            System.out.println("You are currently on " + current + "\n[n = new page | b = back | f = forward]");
+            String operation = userInput.nextLine();
+
+            switch (operation) {
+                case "n":
+                int indexOfPastPage = history.lastIndexOf(current);
+                System.out.println("Enter URL:");
+                current = userInput.nextLine();
+                history.addLast(current);
+                break;
+
+                case "b":
+
+                break;
+
+                case "f":
+
+                default:
+                return;
+            }
+        }
+    }
+}
+
+/*class Node {
     int data;
     Node previous;
     Node next;
@@ -67,4 +106,4 @@ public class BrowserHistory {
     public static void main(String[] args) {
         DoublyLinkedList list = nee DoublyLinkedList();
     }
-}
+}*/
