@@ -6,9 +6,14 @@ public class Swingers {
     public static void main(String[] args) {
         //interface
         JFrame userWindow = new JFrame("Reserve");
+        
         JButton confirmButton = new JButton("Confirm");
+        confirmButton.setBounds(175, 500, 250, 50);
+        userWindow.add(confirmButton);
         
         userWindow.setSize(600, 600);
+        userWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        userWindow.setLayout(null);
         userWindow.setVisible(true);
         
         //input
