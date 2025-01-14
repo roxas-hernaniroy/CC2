@@ -1,4 +1,3 @@
-package javaapplication28;
 import java.util.Scanner;
 import java.awt.*;
 import javax.swing.*;
